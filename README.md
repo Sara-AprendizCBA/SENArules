@@ -60,17 +60,24 @@ El proyecto iniciará en:
 http://localhost:5173
 
 ## 🧩 3. Arquitectura del Proyecto
-1. src/
-     - components/
-            - Header.tsx
-            - SearchBar.tsx
-            - FilterButtons.tsx
-            - RuleList.tsx
-            - RuleDetail.tsx
-            - StatsBar.tsx   ← componente creado por mí
+```text
+src/
+│
+├── components/
+│ ├── Header.tsx
+│ ├── SearchBar.tsx
+│ ├── FilterButtons.tsx
+│ ├── RuleList.tsx
+│ ├── RuleDetail.tsx
+│ └── StatsBar.tsx ← componente creado por mí
+│
+├── data/
+│ └── rules.ts
+│
+├── App.tsx
+└── main.tsx
+```
 
-     - data/
-            - rules.ts
 
 2. App.tsx
 3. main.tsx
