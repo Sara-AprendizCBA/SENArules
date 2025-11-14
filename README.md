@@ -1,4 +1,4 @@
-### 🎮 SENA Rules — Build & Play (React + TypeScript)
+# 🎮 SENA Rules — Build & Play (React + TypeScript)
 
 Aplicación desarrollada como actividad del programa ADSO.
 El objetivo es construir una pequeña app interactiva donde el usuario pueda:
@@ -41,13 +41,13 @@ El proyecto sirve como práctica para:
 
 ## 🛠 2. Instalación y Ejecución
 
-# 📌 Requisitos previos
+### 📌 Requisitos previos
 
 - Node.js 18 o superior
 
 - NPM o Yarn
 
-# 📥 Instalación
+### 📥 Instalación
 
 npm install
 
@@ -60,21 +60,20 @@ El proyecto iniciará en:
 http://localhost:5173
 
 ## 🧩 3. Arquitectura del Proyecto
-src/
-│
-├── components/
-│   ├── Header.tsx
-│   ├── SearchBar.tsx
-│   ├── FilterButtons.tsx
-│   ├── RuleList.tsx
-│   ├── RuleDetail.tsx
-│   └── StatsBar.tsx   ← componente creado por mí
-│
-├── data/
-│   └── rules.ts
-│
-├── App.tsx
-└── main.tsx
+1. src/
+     - components/
+            - Header.tsx
+            - SearchBar.tsx
+            - FilterButtons.tsx
+            - RuleList.tsx
+            - RuleDetail.tsx
+            - StatsBar.tsx   ← componente creado por mí
+
+     - data/
+            - rules.ts
+
+2. App.tsx
+3. main.tsx
 
 ## 📁 Descripción de componentes
 
@@ -92,7 +91,7 @@ src/
 ## ⚛️ 4. Uso de Props, Estado y Eventos
 🟦 Props
 
-# Ejemplos:
+### Ejemplos:
 
 <RuleList rules={filteredRules} onSelect={setSelectedRule} />
 
@@ -101,14 +100,14 @@ src/
 
 - Paso funciones como props para levantar eventos desde componentes hijos.
 
-# 🟩 Estado (useState)
+### 🟩 Estado (useState)
 const [rules, setRules] = useState(initialRules)
 const [searchTerm, setSearchTerm] = useState("")
 const [selectedRule, setSelectedRule] = useState<Rule | null>(null)
 const [category, setCategory] = useState("all")
 
 
-# Usado para:
+### Usado para:
 
 - Controlar el texto de búsqueda
 
@@ -120,13 +119,13 @@ const [category, setCategory] = useState("all")
 
 ## 🟧 Eventos
 
-# Ejemplos:
+### Ejemplos:
 
 onChange={(e) => setSearchTerm(e.target.value)}
 onClick={() => onSelect(rule)}
 
 
-# Se usan para:
+### Se usan para:
 
 - Capturar interacciones del usuario
 
@@ -136,7 +135,7 @@ onClick={() => onSelect(rule)}
 
 ## 🧠 5. Decisiones de Diseño
 
-# ✔ 1 — StatsBar
+### ✔ 1 — StatsBar
 
 - Permite mostrar información global (conteo total, filtrado, favoritos…)
 
@@ -144,7 +143,7 @@ onClick={() => onSelect(rule)}
 
 - Hace la UI más profesional
 
-# ✔ 2 — RuleDetail
+### ✔ 2 — RuleDetail
 
 - Evita mezclar demasiada lógica dentro del listado.
 
@@ -152,7 +151,7 @@ onClick={() => onSelect(rule)}
 
 - Mejora la experiencia al mostrar información extendida.
 
-# ✔ 3 — FilterButtons
+### ✔ 3 — FilterButtons
 
 - Permite una navegación más rápida sin recargar la página.
 
@@ -165,13 +164,13 @@ Estas decisiones mantienen una arquitectura limpia, siguiendo la filosofía de c
 ## 📸 6. Capturas de Pantalla
 
 
-# Pantalla Principal
+### Pantalla Principal
 ![Home](./public/Principal.png)
 
-# Detalle
+### Detalle
 ![Detail](./public/Detalle.png)
 
-# Funcion
+### Funcion
 
 ![Funcion](./public/senarules.mp4)
 
