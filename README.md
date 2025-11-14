@@ -172,7 +172,7 @@ Estas decisiones mantienen una arquitectura limpia, siguiendo la filosofía de c
 
 ### Funcion
 
-![Funcion](./public/senarules.mp4)
+![Funcion](./public/senarules.gif)
 
 ## ✔ 7. Tecnologías utilizadas
 
